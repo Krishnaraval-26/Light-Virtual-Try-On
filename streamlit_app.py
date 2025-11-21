@@ -509,7 +509,7 @@ def generate_room_with_light(
     )
 
     response = client.models.generate_content(
-        model="gemini-2.0-flash",
+        model="gemini-2.5-flash-image",
         contents=[gt.Content(role="user", parts=parts)],
         config=config,
     )
